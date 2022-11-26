@@ -1,0 +1,86 @@
+<!DOCKTYPE html>
+<!--TipCounter-->
+
+<html lang="pt_br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>TipsCounter</title>
+    </head>
+    
+    <header>
+        <div>
+            <span >
+            <a class = "logo" href="https://www.google.com.br"  target="_blank" title= "Marcos Paulo Silva"><img src="Logo.svg" style="height: 100%; float: 50%;"></img></a>
+        </span>
+        </div>
+    </header>
+
+    <body>
+        <main class = "animacao animate__animated animate__bounceInDown">
+            <div id="container">
+                <div class="title">
+                    <h1 class ="titulo animated__bounce">Calculadora de Gorjetas</h1>
+                </div>
+                <div>
+                    <form class="tipsForm" id="tipsForm">
+                        <div>
+                        <label for="bill">
+                            <p>Quanto ficou a conta?</p>
+                        </label>
+                        <span>
+                            R$ <input type="number" placeholder="Digite aqui o valor!" name="bill" id="bill" class="formImput">
+                        </span>
+                            <span type= "text" id="preenchaBill" style= "color: #6400FF; font-size: smaller; padding: 1px; margin-top: 0px; display: none;">Por favor, selecione uma opção!</span>
+                        </div>
+
+                        <div>
+                        <label for="serviceQuality">
+                            <p>Como foi o seu servioço?</p>
+                        </label>
+                        <span>
+                            <select placeholder="Selecione uma opção!" name="seviceQuality" id="serviceQuality" class="formSelect">
+                                <option value="" disabled selected hidden>Selecione uma Opção!</option>
+                                <option value="0.2">20% - Incrível!😎</option>
+                                <option value="0.15">15% - Bom!😀</option>
+                                <option value="0.10">10% - Aceitável!🙂</option>
+                                <option value="0.05">5% - Ruim!😕</option>
+                                <option value="0.00">0% - Péssimo!😱</option>
+                            </select>
+                        </span>
+                            <span type= "text" id="preenchaQuality" style= "color: #6400FF; font-size: smaller; padding: 1px; margin-top: 0px; display: none;">Por favor, selecione uma opção!</span>
+                        </div>
+
+                        <div>
+                        <label for="people">
+                            <p>Quantas pessoas vão dividir a conta?</p>
+                        </label>
+                        <label>
+                            <input type="number" placeholder="2" name="people" id="people" class="formImput"> pessoas<br>
+                        </label>
+                            <span type= "text" id="preenchaPeople" style= "color: #6400FF; font-size: smaller; padding: 1px; margin-top: 0px; display: none;">Por favor, preencha este campo!</span>
+                            <span type= "text" id="minimoPeople" style="color: #6400FF; font-size: smaller; padding: 1px; margin-top: 0px; display: none;">Mínimo 1 pessoa!</span>
+                        </div>
+
+                        <button type="submit" class="formSubmit" style= "margin-top: 20px" >Calcular</button>
+                    </form>
+                </div>
+                <div id="totalTip">
+                    Gorjeta Total:
+                    R$<span id="tip">0.00</span>
+                    <div id="ponto">.</div>
+                    <p id="each">cada.</p>
+                </div>
+                <script type="text/javascript" src="scripts.js"></script>
+            </div>
+        </main>
+    </body>
+
+    <footer>
+        <a title= "Instagram" href="https://www.instagram.com/souomarcospaulo/" target="_blank"><img src="logo_instagram.png" style="height: 100%; float: 50%;"></img></a>
+        <a title= "LinkedIn" href="https://www.linkedin.com/in/mpsmarcospaulo/" target="_blank"><img src="logo_linkedin.png" style="height: 100%; float: 50%;"></img></a>
+        <a title= "GitHub" href="https://www.github.com/souomarcos/" target="_blank"><img src="logo_github.png" style="height: 100%; float: 50%;"></img></a>
+    </footer>
+</html>    
