@@ -81,17 +81,17 @@ footer{
 /*Classes*/
 
 .sIg{
-    height: 80px;
+    height: 60px;
     float: 50%;
 }
 
 .sLin{
-    height: 80px;
+    height: 60px;
     float: 50%;
 }
 
 .sGit{
-    height: 80px;
+    height: 60px;
     float: 50%;
 }
 
@@ -206,19 +206,4 @@ footer{
 .formSubmit:active{
     position:relative;
     top:1px;
-}
-
-.navBar{
-    
-    display: flex;
-    justify-content: center;
-}
-
-.navList{
-    display: none;
-}
-
-.navItem{
-    margin: 0 15px;
-    display: block;
 }
