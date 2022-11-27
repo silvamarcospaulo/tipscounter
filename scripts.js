@@ -46,7 +46,6 @@ function calculateTip(event){
         let total = (bill*serviceQuality)/people;
     }    
 }
-
     document.getElementById('totalTip').style.display = "none";
     document.getElementById('each').style.display = "none";
     document.getElementById('ponto').style.display = "none";
